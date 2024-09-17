@@ -1,0 +1,152 @@
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* background-color: #000000; */
+  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+h1 {
+  font-size: 5rem;
+  color: #e7e8e9;
+  font-family: "Rubik";
+}
+
+.drum-image {
+  vertical-align: middle;
+  /* padding-left: 20px; */
+}
+
+
+
+footer {
+  color: #DBEDF3;
+  font-family: "rubik";
+}
+
+.w {
+  background-image: url(./images/tom1.png);
+  background-image: -webkit-image-set();
+}
+
+.a {
+  background-image: url(./images/tom2.png);
+}
+
+.s {
+  background-image: url(./images/tom3.png);
+}
+
+.d {
+  background-image: url(./images/tom4.png);
+}
+
+.j {
+  background-image: url(./images/snare.png);
+}
+
+.k {
+  background-image: url(./images/crash.png);
+}
+
+.l {
+  background-image: url(./images/kick.png);
+}
+
+.container {
+  display: flex;
+  margin: 10% auto;
+  gap: 25px;
+}
+
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  border-radius: 15px;
+  outline: rgb(252, 226, 10) solid 10px;
+  font-size: 5rem;
+  font-family: 'Rubik';
+  line-height: 2;
+  font-weight: 500;
+  color: #c70000;
+  text-shadow: 3px 1px #ffffff;
+  width: 150px;
+  height: 150px;
+  border: 0px;
+  background-color: rgb(255, 255, 255);
+  background-size: cover; /* Ensure the background image covers the entire button */
+  background-position: center; /* Center the image in the button */
+  background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .drum {
+    font-size: 4rem;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .drum {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  .set {
+    margin: 5% auto;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .drum {
+    font-size: 2.5rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  .set {
+    margin: 2% auto;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .drum {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+  }
+
+  .set {
+    margin: 1% auto;
+    gap: 5px;
+  }
+}
