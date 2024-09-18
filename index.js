@@ -71,11 +71,11 @@ scrollLockBtn.addEventListener('click', function() {
   if (isScrollLocked) {
     // Unlock scroll
     document.body.style.overflow = 'auto';
-    scrollLockBtn.textContent = '🔒';
+    scrollLockBtn.textContent = '🔓';
   } else {
     // Lock scroll
     document.body.style.overflow = 'hidden';
-    scrollLockBtn.textContent = '🔓';
+    scrollLockBtn.textContent = '🔒';
   }
   
   isScrollLocked = !isScrollLocked;
