@@ -1,9 +1,10 @@
 body {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  /* background-color: #000000; */
-  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
 }
 
 h1 {
@@ -14,19 +15,17 @@ h1 {
 
 .drum-image {
   vertical-align: middle;
-  /* padding-left: 20px; */
 }
-
 
 
 footer {
   color: #DBEDF3;
   font-family: "rubik";
+  /* margin-top: auto; */
 }
 
 .w {
   background-image: url(./images/tom1.png);
-  background-image: -webkit-image-set();
 }
 
 .a {
@@ -54,9 +53,8 @@ footer {
 }
 
 .container {
-  display: flex;
-  margin: 10% auto;
-  gap: 25px;
+  margin: 5% auto;
+
 }
 
 
@@ -82,71 +80,33 @@ footer {
   height: 150px;
   border: 0px;
   background-color: rgb(255, 255, 255);
-  background-size: cover; /* Ensure the background image covers the entire button */
-  background-position: center; /* Center the image in the button */
-  background-repeat: no-repeat; /* Prevent image repetition */
+  background-size: cover;
+  /* Ensure the background image covers the entire button */
+  background-position: center;
+  margin: 10px;
+  /* Center the image in the button */
+  /* Prevent image repetition */
+  text-align: center;
+  display: inline-block;
 }
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  h1 {
-    font-size: 4rem;
-  }
 
-  .drum {
-    font-size: 4rem;
-    width: 120px;
-    height: 120px;
-  }
+.scroll-lock-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s;
 }
 
-@media (max-width: 992px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  .drum {
-    font-size: 3rem;
-    width: 100px;
-    height: 100px;
-  }
-
-  .set {
-    margin: 5% auto;
-    gap: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .drum {
-    font-size: 2.5rem;
-    width: 80px;
-    height: 80px;
-  }
-
-  .set {
-    margin: 2% auto;
-    gap: 8px;
-  }
-}
-
-@media (max-width: 576px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  .drum {
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
-  }
-
-  .set {
-    margin: 1% auto;
-    gap: 5px;
-  }
+.scroll-lock-btn:hover {
+  background-color: #0056b3;
 }
