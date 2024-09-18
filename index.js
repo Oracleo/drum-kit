@@ -63,3 +63,20 @@ function changeColor(button) {
     button.style.color = ""; // Reset color after 100ms (or adjust as needed)
   }, 100);
 }
+//scroll lock
+const scrollLockBtn = document.getElementById('scrollLockBtn');
+let isScrollLocked = false;
+
+scrollLockBtn.addEventListener('click', function() {
+  if (isScrollLocked) {
+    // Unlock scroll
+    document.body.style.overflow = 'auto';
+    scrollLockBtn.textContent = '🔒';
+  } else {
+    // Lock scroll
+    document.body.style.overflow = 'hidden';
+    scrollLockBtn.textContent = '🔓';
+  }
+  
+  isScrollLocked = !isScrollLocked;
+});
